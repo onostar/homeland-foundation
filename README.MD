@@ -1,0 +1,1 @@
+Save Homeland Foundation, is an Initiative of The Sensitisation Against Environmental Hazard, Domestic Violence And Crime. Her Community Oriented Policing Services (COPS) has been introduced  to help law enforcement agencies implement and enhance community policing.
