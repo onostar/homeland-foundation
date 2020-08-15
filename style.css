@@ -1379,6 +1379,7 @@ color: rgb(231, 226, 226);
     box-shadow:3px 3px 3px rgb(29, 128, 111), 3px 3px 3px #c4c4c4;
     display:block;
     transition:all 0.5s;
+    padding:20px;
 }
 .galleria img:hover{
     transform:scale(1.3);
