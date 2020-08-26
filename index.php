@@ -458,10 +458,10 @@
             echo "not connected";
         } */
 
-        $full_name = $_POST['full_name'];
-        $location = $_POST['victim_location'];
-        $incident = $_POST['incident'];
-        $message = $_POST['victim_message'];
+        $full_name = (isset ($_POST['full_name']) ? $_POST['full_name'] : '');
+        $location = (isset ($_POST['victim_location']) ? $_POST['victim_location'] : '');
+        $incident = (isset ($_POST['incident']) ? $_POST['incident'] : '');
+        $message = (isset ($_POST['victim_message']) ? $_POST['victim_message'] : '');
 
         $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
         $insert_done = mysqli_query($connectDB, $sql_insert);
