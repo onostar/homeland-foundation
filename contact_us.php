@@ -31,7 +31,7 @@
         <!-- main header with navigation -->
         <header id="mainHeader">
             <div class="logo_title">
-                <a href="index.html" title="save homeland security foundation">
+                <a href="index.php" title="save homeland security foundation">
                     <img src="images/homeland_foundation_logo.png" alt="Homeland Foundation">
                     <h1>
                         <div class="title">Homeland Foundation</div>
@@ -41,17 +41,17 @@
             </div>
             <!-- navigation -->
             <nav id="navigation">
-                <ul>
-                    <li><a href="about.html" title="who we are">About</a></li>
-                    <li><a href="services.html" title="What we do">services</a></li>
+            <ul>
+                    <li><a href="about.php" title="who we are">About</a></li>
+                    <li><a href="services.php" title="What we do">services</a></li>
                     <li><a href="javascript:void(0);" title="All our work">Events<i class="fas fa-sort-down"></i></a>
                         <ul>
-                            <li><a href="event_gallery.html" title="Photos of our recent events">Event gallery</a></li>
-                            <li><a href="event_media.html" title="Recent videos">Event media</a></li>
+                            <li><a href="event_gallery.php" title="Photos of our recent events">Event gallery</a></li>
+                            <li><a href="event_media.php" title="Recent videos">Event media</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html" title="Trending topics">Blog</a></li>
-                    <li class="active"><a href="contact.html" title="Contact us">Contact</a></li>
+                    <li><a href="blog.php" title="Trending topics">Blog</a></li>
+                    <li class="active"><a href="contact_us.php" title="Contact us">Contact</a></li>
                 </ul>
             </nav>
             <div class="menu-icon" onclick="displayMenu()"><a href="javascript:void(0);"><i class="fas fa-bars" style="color:#fff"></i></a></div>
@@ -177,9 +177,9 @@
         <div class="clear"></div>
         <div class="complaintBox">
             <h3>Drop your complaints here</h3>
-            <form method="POST">
-                <input type="text" name="fullName" placeholder="Your fullName*" required><br>
-                <select name="location" required>
+            <form method="POST" action="index.php">
+                <input type="text" name="full_name" placeholder="Your fullName*" required><br>
+                <select name="victim_location" required>
                     <option value="" selected>Select your location</option>
                     <option value="New Benin">New Benin market</option>
                     <option value="Ring road">Ring road</option>
@@ -199,12 +199,39 @@
                     <option value="Suspects">Suspects</option>
                     <option value="Crime in progress">Crime in progress</option>
                 </select><br>
-                <textarea name="message" placeholder="Give us a detailed information of the incident" required>
+                <textarea name="victim_message" placeholder="Give us a detailed information of the incident" required>
                 </textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
     </div>
+    <?php
+        $host = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "homeland_foundation";
+        $connectDB = mysqli_connect($host, $username, $password, $dbname);
+
+        /* if($connectDB){
+            echo "db connected";
+        }else{
+            echo "not connected";
+        } */
+
+        $full_name = $_POST['full_name'];
+        $location = $_POST['victim_location'];
+        $incident = $_POST['incident'];
+        $message = $_POST['victim_message'];
+
+        $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
+        $insert_done = mysqli_query($connectDB, $sql_insert);
+
+        if($insert_done){
+            return "index.php";
+        }else{
+            echo "not submitted";
+        }
+    ?>
     <div id="orderNow">
         <a onclick="displayComplainBox()" href="javascript:void(0);"><i class="fas fa-user-ninja"></i> Report case</a>
     </div>

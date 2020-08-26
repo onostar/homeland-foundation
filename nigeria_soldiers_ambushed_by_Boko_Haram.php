@@ -7,7 +7,7 @@
     <meta name="author" content="Applied Macros system">
     <meta name="description" content="Save Homeland Foundation, is an Initiative of The Sensitisation Against Environmental Hazard, Domestic Violence And Crime. Her Community Oriented Policing Services (COPS) has been introduced  to help law enforcement agencies implement and enhance community policing. ">
     <meta name="keywords" content="community policing, security, police, secure, community, crime, fight crime, rape, cultism, corruption, kidnapping">
-    <title>Homeland Foundation - Event photos</title>
+    <title>Homeland Foundation - Nigeria Soldiers ambushed by Boko Haram</title>
     <link rel="icon" href="images/homeland_foundation_logo.png" type="image/png" size="32X32">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css">
@@ -31,7 +31,7 @@
         <!-- main header with navigation -->
         <header id="mainHeader">
             <div class="logo_title">
-                <a href="index.html" title="save homeland security foundation">
+                <a href="index.php" title="save homeland security foundation">
                     <img src="images/homeland_foundation_logo.png" alt="Homeland Foundation">
                     <h1>
                         <div class="title">Homeland Foundation</div>
@@ -42,60 +42,62 @@
             <!-- navigation -->
             <nav id="navigation">
                 <ul>
-                    <li><a href="about.html" title="who we are">About</a></li>
-                    <li><a href="services.html" title="What we do">services</a></li>
+                    <li><a href="about.php" title="who we are">About</a></li>
+                    <li><a href="services.php" title="What we do">services</a></li>
                     <li><a href="javascript:void(0);" title="All our work">Events<i class="fas fa-sort-down"></i></a>
                         <ul>
-                            <li  class="active"><a href="event_gallery.html" title="Photos of our recent events">Event gallery</a></li>
-                            <li><a href="event_media.html" title="Recent videos">Event media</a></li>
+                            <li><a href="event_gallery.php" title="Photos of our recent events">Event gallery</a></li>
+                            <li><a href="event_media.php" title="Recent videos">Event media</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html" title="Trending topics">Blog</a></li>
-                    <li><a href="contact.html" title="Contact us">Contact</a></li>
+                    <li class="active"><a href="blog.php" title="Trending topics">Blog</a></li>
+                    <li><a href="contact_us.php" title="Contact us">Contact</a></li>
                 </ul>
             </nav>
             <div class="menu-icon" onclick="displayMenu()"><a href="javascript:void(0);"><i class="fas fa-bars" style="color:#fff"></i></a></div>
             
         </header>
         <!--banner slides-->
+        <section id="aboutBanner">
+            <div class="bannerImg">
+                <img src="images/boko_haram_ambushed_nigerian_soliders.jpg" alt="police arrests 3 brothers for kidnapping">
+            </div>
+            <div class="sub-details">
+                <!-- <h2 style="text-decoration:none; letter-spacing:2px;">Our thoughts and advice</h2> -->
+            </div>
+            
+        </section>
         <section id="ourExistence">
-            <h2>Our recent events and activities</h2>
-            <hr size="5">
-            <p class="peek">Have a glance at our actvities</p>
-            <div class="galleria">
-                <figure class="allEvents">
-                    <img src="images/events1.jpg" alt="event">
-                    <figcaption>Nigeria Soldiers ambushed by Boko Haram</figcaption>
-                </figure>
-                <figure class="allEvents">
-                    <img src="images/events2.jpg" alt="Events decor">
-                    <figcaption>Nigeria Soldiers ambushed by Boko Haram</figcaption>
-                </figure>
-                <figure class="allEvents">
-                    <img src="images/events3.jpg" alt="Events photo">
-                    <figcaption>Vicitm of domestic violence</figcaption>
-                </figure>
-                <figure class="allEvents">
-                    <img src="images/events4.jpg" alt="Events photo">
-                    <figcaption>Sars caught armed robbers</figcaption>
-                </figure>
-                <figure class="allEvents">
-                    <img src="images/events5.jpg" alt="event">
-                    <figcaption>CEO homeland Foundation</figcaption>
-                </figure>
-                <figure class="allEvents">
-                    <img src="images/events2.jpg" alt="Events decor">
-                    <figcaption>Nigeria Soldiers ambushed by Boko Haram</figcaption>
-                </figure>
-                <figure class="allEvents">
-                    <img src="images/events1.jpg" alt="Events photo">
-                    <figcaption>Nigeria Soldiers ambushed by Boko Haram</figcaption>
-                </figure>
-                <figure class="allEvents">
-                    <img src="images/events4.jpg" alt="Events photo">
-                    <figcaption>Sars caught armed robbers</figcaption>
-                </figure>
-                
+            <div class="blog_article">
+                <article>
+                    <h3>NIGERIA SOLDIERS OF THE 198 BATALION AMBUSHED AND KILLED BY BOKO HARAM</h3>
+                    <div class="details">
+                        <span class="category" style="color:#fff; background-color:red">Terrorism</span>
+                        <span><strong>Pubished: </strong>8<sup>th</sup> July, 2020</span>
+                    </div>
+                    <hr>
+                    <p>Nigeria Soldiers of the 198 special forces battalion were killed by Boko Haram members on 7th July 2020, while another 23 soliders were killed on 8th July, 2020.<br><br>
+                    Please say a prayer for our fallen heroes. They were killed protecting their fatherland. They paid the ultimate price. They are our heroes.<br><br>
+                    RIP<br>
+                    Save Homeland Foundation Nigeria.
+                    <img src="images/events2.jpg" alt="nigerian army ambushed">
+                    </p>
+                </article>
+                <aside>
+                    <h3>Related Posts</h3>
+                    <div class="aside_articles">
+                        <figure>
+                            <a href="police_arrest_3_brothers_for_kidnapping.php">
+                            <img src="images/Police-arrest-3-brothers-for-kidnap.jpg" alt="police arrest brothers">
+                            <figcaption>Police arrest 3 brothers for the kidnapping and murder of a mother of 5</figcaption></a>
+                        </figure>
+                        <figure>
+                            <a href="police_arrest_3_brothers_for_kidnapping.php">
+                            <img src="images/local-crime.jpg" alt="police arrest brothers">
+                            <figcaption>Police arrest 3 brothers for the kidnapping and murder of a mother of 5</figcaption></a>
+                        </figure>
+                    </div>
+                </aside>
             </div>
         </section>
         <footer>
@@ -180,9 +182,9 @@
             <div class="clear"></div>
             <div class="complaintBox">
                 <h3>Drop your complaints here</h3>
-                <form method="POST">
-                    <input type="text" name="fullName" placeholder="Your fullName*" required><br>
-                    <select name="location" required>
+                <form method="POST" action="index.php">
+                    <input type="text" name="full_name" placeholder="Your fullName*" required><br>
+                    <select name="victim_location" required>
                         <option value="" selected>Select your location</option>
                         <option value="New Benin">New Benin market</option>
                         <option value="Ring road">Ring road</option>
@@ -202,12 +204,39 @@
                         <option value="Suspects">Suspects</option>
                         <option value="Crime in progress">Crime in progress</option>
                     </select><br>
-                    <textarea name="message" placeholder="Give us a detailed information of the incident" required>
+                    <textarea name="victim_message" placeholder="Give us a detailed information of the incident" required>
                     </textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
+        <?php
+            $host = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "homeland_foundation";
+            $connectDB = mysqli_connect($host, $username, $password, $dbname);
+    
+            /* if($connectDB){
+                echo "db connected";
+            }else{
+                echo "not connected";
+            } */
+    
+            $full_name = $_POST['full_name'];
+            $location = $_POST['victim_location'];
+            $incident = $_POST['incident'];
+            $message = $_POST['victim_message'];
+    
+            $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
+            $insert_done = mysqli_query($connectDB, $sql_insert);
+    
+            if($insert_done){
+                return "index.php";
+            }else{
+                echo "not submitted";
+            }
+        ?>
         <div id="orderNow">
             <a onclick="displayComplainBox()" href="javascript:void(0);"><i class="fas fa-user-ninja"></i> Report case</a>
         </div>

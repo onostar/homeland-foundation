@@ -7,7 +7,7 @@
     <meta name="author" content="Applied Macros system">
     <meta name="description" content="Save Homeland Foundation, is an Initiative of The Sensitisation Against Environmental Hazard, Domestic Violence And Crime. Her Community Oriented Policing Services (COPS) has been introduced  to help law enforcement agencies implement and enhance community policing. ">
     <meta name="keywords" content="community policing, security, police, secure, community, crime, fight crime, rape, cultism, corruption, kidnapping">
-    <title>Homeland Foundation - our services</title>
+    <title>Homeland Foundation - About us</title>
     <link rel="icon" href="images/homeland_foundation_logo.png" type="image/png" size="32X32">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css">
@@ -31,7 +31,7 @@
         <!-- main header with navigation -->
         <header id="mainHeader">
             <div class="logo_title">
-                <a href="index.html" title="save homeland security foundation">
+                <a href="index.php" title="save homeland security foundation">
                     <img src="images/homeland_foundation_logo.png" alt="Homeland Foundation">
                     <h1>
                         <div class="title">Homeland Foundation</div>
@@ -41,17 +41,17 @@
             </div>
             <!-- navigation -->
             <nav id="navigation">
-                <ul>
-                    <li><a href="about.html" title="who we are">About</a></li>
-                    <li class="active"><a href="services.html" title="What we do">services</a></li>
+            <ul>
+                    <li class="active"><a href="about.php" title="who we are">About</a></li>
+                    <li><a href="services.php" title="What we do">services</a></li>
                     <li><a href="javascript:void(0);" title="All our work">Events<i class="fas fa-sort-down"></i></a>
                         <ul>
-                            <li><a href="event_gallery.html" title="Photos of our recent events">Event gallery</a></li>
-                            <li><a href="event_media.html" title="Recent videos">Event media</a></li>
+                            <li><a href="event_gallery.php" title="Photos of our recent events">Event gallery</a></li>
+                            <li><a href="event_media.php" title="Recent videos">Event media</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html" title="Trending topics">Blog</a></li>
-                    <li><a href="contact.html" title="Contact us">Contact</a></li>
+                    <li><a href="blog.php" title="Trending topics">Blog</a></li>
+                    <li><a href="contact_us.php" title="Contact us">Contact</a></li>
                 </ul>
             </nav>
             <div class="menu-icon" onclick="displayMenu()"><a href="javascript:void(0);"><i class="fas fa-bars" style="color:#fff"></i></a></div>
@@ -60,77 +60,58 @@
         <!--banner slides-->
         <section id="aboutBanner">
             <div class="bannerImg">
-                <img src="images/services.jpg" alt="services">
+                <picture>
+                    <!-- <source media="(max-width: 600px)"
+                    srcset="images/community_policing.jpg" alt="about save homeland foundation"> -->
+                    <img src="images/community_police.jpeg" alt="about save homeland foundation">
+                </picture>
             </div>
             <div class="sub-details">
-                <h2 style="text-decoration: none;">What we offer to the community</h2>
-                <div class="buttons">
-                    <button><a href="contact.html">Contact us</a></button>
-                    <button><a href="event_gallery.html" title="event photos">Events</a></button>
-                </div>
+                <h2>Who We are</h2>
+                <p>We offer Quality of service to our clients to make their lives bettter.</p>
             </div>
-            
         </section>
         <section id="ourExistence">
-            <h2>Our services</h2>
-            <hr size="5" style="background-color:rgb(29, 128, 111)">
-            <div class="services_detail">
-                <div class="services_text">
-                    <h3>Community Policing </h3>
-                    <p>We are dedicated to offering local policing to all neighbourhoods in Edo state at presence. Our neighbourhood watch service include the following highlighted below.<br><br>
-                        <ul>
-                            <li>Neighbourhood watch</li>
-                            <li>Anti-cultism</li>
-                            <li>Anti-robbery patrol</li>
-                            <li>Fight against Vandalism</li>
-                            <li>Kidnapping investigation and rescue</li>
-                        </ul><br>
-                    <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
-                        <button><a href="contact.html">contact us</a></button>
-                    </p>
+            <h2>Our Existence</h2>
+            <hr size="5">
+            <div class="texts">
+                <p>Save Homeland foundation, also known as Homeland security Nigeria is a Sensitization against environmental Hazard, Domestic Violence and Crime Initiative. It is a way for law enforcement and the citizens to work together not only for disaster preparedness but for all hazards and encourage citizens to volunteer in their communities to encourage community policing which is our Community Oriented Policing Services (COPS) introduced to help law enforcement agencies implement and enhance community policing.<br><br>
+                
+                </p>
+                <img src="images/team_member.jpg" style="height:300px;" alt="who we are">
+            </div>
+            <div class="missionVision">
+                <div class="mission aims">
+                    <h3>Aims and Objectives</h3>
+                    <ol>
+                        <li>Uniting a diverse suburb in creating a stable and crime-free environment; nurturing a sense of unity, dedication and good neighborly relations among neighbors.</li>
+                        <li>Serving as a watchdog for the public and the security agencies, thereby maintaining a partnership between the community and the police with other security agencies/ judiciary to safeguard the communities for which they are responsible against criminal activities and strive for a safe and secure environment.</li>
+                        <li>Encourage and ensure civil- Military relationship and Improving communication, transparency and accountability among its members, residence and other related structures, agencies, encouraging emergency and protection services with the security agencies/judiciary by providing a channel through which the communities can play a meaningful role in crime prevention.</li>
+                        <li>Enhancing  visibility by means of sometimes community patrols (Taskforce), assisting the security agencies in its rendering of service by deterring criminal activities and by providing information and suggestions to checkmate criminal activities 5 Creating public awareness of safety, crime prevention and the protection of persons and their property, and by arranging and facilitating training sessions and workshops on community safety.</li>
+                        <li>To provide a representative voice at Security meetings and support government in the implementation of the Sustainable Development Goals.</li>
+                        <li>Carry out citizens/youth Development training.  And Ensuring that its own members act within the framework of the law.</li>
+                        <li>To ensure communities are more closely involved in problems solving and crime prevention</li>
+                    </ol>
                 </div>
-                <div class="services_image">
-                    <img src="images/community-policing.jpg" alt="Events planning">
+                <div class="vision aims">
+                    <h3>Communication Objectives of the Anti-crime campaign</h3>
+                    <ol>
+                        <li>To mobilize citizens to practically contribute to the fight against crime by joining community police/Safety Forums, becoming a reservist, starting neighborhood or street committees or volunteering in the local police stations. Members of the public will be encouraged to be whistleblowers against crime and report crime at all times; to desist from creating a market for stolen goods including phones by not buying stolen items; to volunteer in their communities; and to actively get to know the neighbors.</li>
+                        <li>To emphasize the importance of each citizen becoming a activist in the struggle against crime – through the crime view Active Citizens campaign which encourages citizens to stand together, to reach out to each other and which re-enforces sound positive values in our society.</li>
+                    </ol>
+                    <img style="width:100%; height:400px;" src="images/events5.jpg" alt="team members">
                 </div>
             </div>
-            <div class="services_detail">
-                <div class="services_text">
-                    <h3>Domestic Violence</h3>
-                    <p>We are always available to help people in need of rescus from any form of domestic violence. Here are some domestiv violence cases we respond to<br><br>
-                        <ul>
-                            <li>Rape</li>
-                            <li>Bullying</li>
-                            <li>Fighting</li>
-                            <li>Local Cultism</li>
-                            
-                        </ul><br>
-                        <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
-                        <button><a href="contact.html">contact us</a></button>
-                    </p>
+            <div class="missionVision">
+                <div class="mission">
+                    <h3>our mission</h3>
+                    <p>The mission of the Homeland security is to participate in the country’s crime fighting efforts. We are glad to partner with crime check security Nigeria limited.</p>
                 </div>
-                <div class="services_image">
-                    <img src="images/domestic_violence3.jpg" alt="domestic vioence">
+                <div class="vision">
+                    <h3>Our vision</h3>
+                    <p>The mission of the Homeland security is to participate in the country’s crime fighting efforts. We are glad to partner with crime check security Nigeria limited.</p>
                 </div>
             </div>
-            <div class="services_detail">
-                <div class="services_text">
-                    <h3>Environmental Hazards Control </h3>
-                    <p>Our team is always on ground to help vicitms during hazards and also control these hazards or prevent them from occuring. Some environmental hazard we control are listed below<br><br>
-                        <ul>
-                            <li>Fire Outbreak</li>
-                            <li>Flood</li>
-                            <li>Building collapse</li>
-                            
-                        </ul><br>
-                        <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
-                        <button><a href="contact.html">contact us</a></button>
-                    </p>
-                </div>
-                <div class="services_image">
-                    <img src="images/environmental_hazard2.jpg" alt="Environmntal hazards">
-                </div>
-            </div>
-            
         </section>
         <footer>
             <section class="mainFooter">
@@ -214,9 +195,9 @@
             <div class="clear"></div>
             <div class="complaintBox">
                 <h3>Drop your complaints here</h3>
-                <form method="POST">
-                    <input type="text" name="fullName" placeholder="Your fullName*" required><br>
-                    <select name="location" required>
+                <form method="POST" action="index.php">
+                    <input type="text" name="full_name" placeholder="Your fullName*" required><br>
+                    <select name="victim_location" required>
                         <option value="" selected>Select your location</option>
                         <option value="New Benin">New Benin market</option>
                         <option value="Ring road">Ring road</option>
@@ -236,15 +217,53 @@
                         <option value="Suspects">Suspects</option>
                         <option value="Crime in progress">Crime in progress</option>
                     </select><br>
-                    <textarea name="message" placeholder="Give us a detailed information of the incident" required>
+                    <textarea name="victim_message" placeholder="Give us a detailed information of the incident" required>
                     </textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
+        <?php
+            $host = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "homeland_foundation";
+            $connectDB = mysqli_connect($host, $username, $password, $dbname);
+    
+            /* if($connectDB){
+                echo "db connected";
+            }else{
+                echo "not connected";
+            } */
+    
+            $full_name = $_POST['full_name'];
+            $location = $_POST['victim_location'];
+            $incident = $_POST['incident'];
+            $message = $_POST['victim_message'];
+    
+            $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
+            $insert_done = mysqli_query($connectDB, $sql_insert);
+    
+            if($insert_done){
+                return "index.php";
+            }else{
+                echo "not submitted";
+            }
+        ?>
         <div id="orderNow">
             <a onclick="displayComplainBox()" href="javascript:void(0);"><i class="fas fa-user-ninja"></i> Report case</a>
         </div>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // display ceo on scroll
+        function displayCeo(){
+            if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+                document.querySelector('.ceoImg').style.display = "block";
+            }
+            else{
+                document.querySelector('.ceoImg').style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -7,7 +7,7 @@
     <meta name="author" content="Applied Macros system">
     <meta name="description" content="Save Homeland Foundation, is an Initiative of The Sensitisation Against Environmental Hazard, Domestic Violence And Crime. Her Community Oriented Policing Services (COPS) has been introduced  to help law enforcement agencies implement and enhance community policing. ">
     <meta name="keywords" content="community policing, security, police, secure, community, crime, fight crime, rape, cultism, corruption, kidnapping">
-    <title>Homeland Foundation - Trends, tips and advice</title>
+    <title>Homeland Foundation - our services</title>
     <link rel="icon" href="images/homeland_foundation_logo.png" type="image/png" size="32X32">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css">
@@ -31,7 +31,7 @@
         <!-- main header with navigation -->
         <header id="mainHeader">
             <div class="logo_title">
-                <a href="index.html" title="save homeland security foundation">
+                <a href="index.php" title="save homeland security foundation">
                     <img src="images/homeland_foundation_logo.png" alt="Homeland Foundation">
                     <h1>
                         <div class="title">Homeland Foundation</div>
@@ -42,16 +42,16 @@
             <!-- navigation -->
             <nav id="navigation">
                 <ul>
-                    <li><a href="about.html" title="who we are">About</a></li>
-                    <li><a href="services.html" title="What we do">services</a></li>
+                    <li><a href="about.php" title="who we are">About</a></li>
+                    <li class="active"><a href="services.php" title="What we do">services</a></li>
                     <li><a href="javascript:void(0);" title="All our work">Events<i class="fas fa-sort-down"></i></a>
                         <ul>
-                            <li><a href="event_gallery.html" title="Photos of our recent events">Event gallery</a></li>
-                            <li><a href="event_media.html" title="Recent videos">Event media</a></li>
+                            <li><a href="event_gallery.php" title="Photos of our recent events">Event gallery</a></li>
+                            <li><a href="event_media.php" title="Recent videos">Event media</a></li>
                         </ul>
                     </li>
-                    <li class="active"><a href="blog.html" title="Trending topics">Blog</a></li>
-                    <li><a href="contact.html" title="Contact us">Contact</a></li>
+                    <li><a href="blog.php" title="Trending topics">Blog</a></li>
+                    <li><a href="contact_us.php" title="Contact us">Contact</a></li>
                 </ul>
             </nav>
             <div class="menu-icon" onclick="displayMenu()"><a href="javascript:void(0);"><i class="fas fa-bars" style="color:#fff"></i></a></div>
@@ -60,46 +60,77 @@
         <!--banner slides-->
         <section id="aboutBanner">
             <div class="bannerImg">
-                <img src="images/services2.jpg" alt="the blog">
+                <img src="images/services.jpg" alt="services">
             </div>
             <div class="sub-details">
-                <h2 style="text-decoration:none; letter-spacing:2px;">Our thoughts and advice</h2>
+                <h2 style="text-decoration: none;">What we offer to the community</h2>
+                <div class="buttons">
+                    <button><a href="contact.html">Contact us</a></button>
+                    <button><a href="event_gallery.html" title="event photos">Events</a></button>
+                </div>
             </div>
             
         </section>
         <section id="ourExistence">
-            <div class="trendPosts">
-                <article><a href="javascript:void(0);">
-                    <figure>
-                        <img src="images/events1.jpg" alt="Avoiding rape">
-                        <figcaption>
-                            <span style="background-color:red">Terrorism</span>
-                            <h3>Nigeria soldiers ambushed by Boko Haram</h3>
-                            <p>Nigeria Soldiers of the 198 special forces battalion were killed by Boko Haram members on 7th July 2020, while another 23 soliders were killed on 8th July, 2020.....</p>
-                        </figcaption>
-                    </figure></a>
-                </article>
-                <article><a href="javascript:void(0);">
-                    <figure>
-                        <img src="images/events4.jpg" alt="Police arrest brothers for kidnapping">
-                        <figcaption>
-                            <span style="background-color:blue">Crime & Kidnapping</span>
-                            <h3>Police arrest brothers for kidnapping</h3>
-                            <p>Police operatives attached to the Intelligence Response Unit of the NIgeria Police Force have arrested three (3) suspects namely; Johnson Emmanuel - 38years......</p>
-                        </figcaption>
-                    </figure></a>
-                </article>
-                <article><a href="javascript:void(0);">
-                    <figure>
-                        <img src="images/hazards.jpg" alt="Preventing hazards">
-                        <figcaption>
-                            <span style="background-color:rgb(59, 163, 204)">Environment</span>
-                            <h3>How to prevent hazards</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam tempore explicabo velit culpa voluptas. Temporibus earum ut doloremque quasi a!</p>
-                        </figcaption>
-                    </figure></a>
-                </article>
+            <h2>Our services</h2>
+            <hr size="5" style="background-color:rgb(29, 128, 111)">
+            <div class="services_detail">
+                <div class="services_text">
+                    <h3>Community Policing </h3>
+                    <p>We are dedicated to offering local policing to all neighbourhoods in Edo state at presence. Our neighbourhood watch service include the following highlighted below.<br><br>
+                        <ul>
+                            <li>Neighbourhood watch</li>
+                            <li>Anti-cultism</li>
+                            <li>Anti-robbery patrol</li>
+                            <li>Fight against Vandalism</li>
+                            <li>Kidnapping investigation and rescue</li>
+                        </ul><br>
+                    <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
+                        <button><a href="contact.html">contact us</a></button>
+                    </p>
+                </div>
+                <div class="services_image">
+                    <img src="images/community-policing.jpg" alt="Events planning">
+                </div>
             </div>
+            <div class="services_detail">
+                <div class="services_text">
+                    <h3>Domestic Violence</h3>
+                    <p>We are always available to help people in need of rescus from any form of domestic violence. Here are some domestiv violence cases we respond to<br><br>
+                        <ul>
+                            <li>Rape</li>
+                            <li>Bullying</li>
+                            <li>Fighting</li>
+                            <li>Local Cultism</li>
+                            
+                        </ul><br>
+                        <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
+                        <button><a href="contact.html">contact us</a></button>
+                    </p>
+                </div>
+                <div class="services_image">
+                    <img src="images/domestic_violence3.jpg" alt="domestic vioence">
+                </div>
+            </div>
+            <div class="services_detail">
+                <div class="services_text">
+                    <h3>Environmental Hazards Control </h3>
+                    <p>Our team is always on ground to help vicitms during hazards and also control these hazards or prevent them from occuring. Some environmental hazard we control are listed below<br><br>
+                        <ul>
+                            <li>Fire Outbreak</li>
+                            <li>Flood</li>
+                            <li>Building collapse</li>
+                            
+                        </ul><br>
+                        <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
+                        <button><a href="contact.html">contact us</a></button>
+                    </p>
+                </div>
+                <div class="services_image">
+                    <img src="images/environmental_hazard2.jpg" alt="Environmntal hazards">
+                </div>
+            </div>
+            
         </section>
         <footer>
             <section class="mainFooter">
@@ -107,7 +138,7 @@
                     <div class="contactAddress">
                         <h3>For more info or to report an incident</h3>
                         <div class="address">
-                            <i class="fas fa-home" style="color:rgb(29, 128, 111); font-size: 2.5em;"></i>
+                            <i class="fas fa-home" style="color:rgb(29, 128, 111);; font-size: 2.5em;"></i>
                             <div class="addtext">
                                 <h4>Head office:</h4>
                                 <p>360 Housing Complex Road  Ekpan, Effurun, <br> Delta state</p>
@@ -179,38 +210,65 @@
             <a href="#topHeader"><i class="fas fa-arrow-up" style="color:#fff;" size="10"></i></a>
         </div>
         <div id="complainBox">
-            <p onclick="displayComplainBox()"><i class="fas fa-window-close"></i></p>
-            <div class="clear"></div>
-            <div class="complaintBox">
-                <h3>Drop your complaints here</h3>
-                <form method="POST">
-                    <input type="text" name="fullName" placeholder="Your fullName*" required><br>
-                    <select name="location" required>
-                        <option value="" selected>Select your location</option>
-                        <option value="New Benin">New Benin market</option>
-                        <option value="Ring road">Ring road</option>
-                        <option value="Ugbowo">Ugbowo</option>
-                        <option value="Ekenwa">Ekenwa</option>
-                        <option value="GRA">GRA</option>
-                        <option value="Uselu">Uselu</option>
-                        <option value="Aduwawa">Aduwawa</option>
-                        <option value="Sapele road">Sapele road</option>
-                    </select><br>
-                    <select name="incident" required>
-                        <option value="" selected>Select incident</option>
-                        <option value="Armed robbery">Armed robbery</option>
-                        <option value="Rape">Rape</option>
-                        <option value="Kidnapping">Kidnapping</option>
-                        <option value="Cultism">Cultist activity</option>
-                        <option value="Suspects">Suspects</option>
-                        <option value="Crime in progress">Crime in progress</option>
-                    </select><br>
-                    <textarea name="message" placeholder="Give us a detailed information of the incident" required>
-                    </textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+        <p onclick="displayComplainBox()"><i class="fas fa-window-close"></i></p>
+        <div class="clear"></div>
+        <div class="complaintBox">
+            <h3>Drop your complaints here</h3>
+            <form method="POST" action="index.php">
+                <input type="text" name="full_name" placeholder="Your fullName*" required><br>
+                <select name="victim_location" required>
+                    <option value="" selected>Select your location</option>
+                    <option value="New Benin">New Benin market</option>
+                    <option value="Ring road">Ring road</option>
+                    <option value="Ugbowo">Ugbowo</option>
+                    <option value="Ekenwa">Ekenwa</option>
+                    <option value="GRA">GRA</option>
+                    <option value="Uselu">Uselu</option>
+                    <option value="Aduwawa">Aduwawa</option>
+                    <option value="Sapele road">Sapele road</option>
+                </select><br>
+                <select name="incident" required>
+                    <option value="" selected>Select incident</option>
+                    <option value="Armed robbery">Armed robbery</option>
+                    <option value="Rape">Rape</option>
+                    <option value="Kidnapping">Kidnapping</option>
+                    <option value="Cultism">Cultist activity</option>
+                    <option value="Suspects">Suspects</option>
+                    <option value="Crime in progress">Crime in progress</option>
+                </select><br>
+                <textarea name="victim_message" placeholder="Give us a detailed information of the incident" required>
+                </textarea>
+                <button type="submit">Submit</button>
+            </form>
         </div>
+    </div>
+    <?php
+        $host = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "homeland_foundation";
+        $connectDB = mysqli_connect($host, $username, $password, $dbname);
+
+        /* if($connectDB){
+            echo "db connected";
+        }else{
+            echo "not connected";
+        } */
+
+        $full_name = $_POST['full_name'];
+        $location = $_POST['victim_location'];
+        $incident = $_POST['incident'];
+        $message = $_POST['victim_message'];
+
+        $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
+        $insert_done = mysqli_query($connectDB, $sql_insert);
+
+        if($insert_done){
+            return "index.php";
+        }else{
+            echo "not submitted";
+        }
+    ?>
         <div id="orderNow">
             <a onclick="displayComplainBox()" href="javascript:void(0);"><i class="fas fa-user-ninja"></i> Report case</a>
         </div>
