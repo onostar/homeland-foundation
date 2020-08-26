@@ -72,4 +72,4 @@ function displayComplainBox(){
 setTimeout(function showReportButton(){
     let reportButton = document.getElementById('orderNow');
     reportButton.style.display = "block";
-}, 10000);
+}, 10000)

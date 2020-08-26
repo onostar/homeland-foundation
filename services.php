@@ -65,8 +65,8 @@
             <div class="sub-details">
                 <h2 style="text-decoration: none;">What we offer to the community</h2>
                 <div class="buttons">
-                    <button><a href="contact.html">Contact us</a></button>
-                    <button><a href="event_gallery.html" title="event photos">Events</a></button>
+                    <button><a href="contact_us.php">Contact us</a></button>
+                    <button><a href="event_gallery.php" title="event photos">Events</a></button>
                 </div>
             </div>
             
@@ -86,7 +86,7 @@
                             <li>Kidnapping investigation and rescue</li>
                         </ul><br>
                     <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
-                        <button><a href="contact.html">contact us</a></button>
+                        <button><a href="contact_us.php">contact us</a></button>
                     </p>
                 </div>
                 <div class="services_image">
@@ -105,7 +105,7 @@
                             
                         </ul><br>
                         <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
-                        <button><a href="contact.html">contact us</a></button>
+                        <button><a href="contact_us.php">contact us</a></button>
                     </p>
                 </div>
                 <div class="services_image">
@@ -123,7 +123,7 @@
                             
                         </ul><br>
                         <button><a onclick="displayComplainBox()" href="javascript:void(0)">Request Help</a></button>
-                        <button><a href="contact.html">contact us</a></button>
+                        <button><a href="contact_us.php">contact us</a></button>
                     </p>
                 </div>
                 <div class="services_image">
@@ -264,7 +264,7 @@
         $insert_done = mysqli_query($connectDB, $sql_insert);
 
         if($insert_done){
-            return "index.php";
+            echo "";
         }else{
             echo "not submitted";
         }

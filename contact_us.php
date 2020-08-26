@@ -227,8 +227,7 @@
         $insert_done = mysqli_query($connectDB, $sql_insert);
 
         if($insert_done){
-            return "index.php";
-        }else{
+            echo "";
             echo "not submitted";
         }
     ?>

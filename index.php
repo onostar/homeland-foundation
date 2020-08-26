@@ -68,7 +68,7 @@
                         <h2>Advancing neighbourhood Security</h2>
                         <p>We keep watch, so you dont have to. Securing you, your family and property is our priority.</p>
                         <div class="buttons">
-                            <button><a href="about.html">Learn more</a></button>
+                            <button><a href="about.php">Learn more</a></button>
                             <button><a onclick="displayComplainBox()" href="javascript:void(0);">Complaints</a></button>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                     <div class="slider">
                         <h2>Community Policing</h2>
                         <p>Your neighbourhood watch. We keep watch so you dont have to.</p>
-                        <button><a href="services.html">Learn more</a></button>
+                        <button><a href="services.php">Learn more</a></button>
                     </div>
                 </div>
                 <div class="slide" id="slide3">
@@ -90,7 +90,7 @@
                     <div class="slider">
                         <h2>Environmental hazard control</h2>
                         <p>We help control and manage environmental hazards of any kind. Just make a call</p>
-                        <button><a href="services.html">Learn more</a></button>
+                        <button><a href="services.php">Learn more</a></button>
                     </div>
                 </div>
                 <div class="slide" id="slide4">
@@ -100,7 +100,7 @@
                     <div class="slider">
                         <h2>Fight against Domestic Violence</h2>
                         <p>Make the call, and we will make it stop</p>
-                        <button><a href="makeover.html">Learn more</a></button>
+                        <button><a href="services.php">Learn more</a></button>
                     </div>
                 </div>
             </div>
@@ -442,6 +442,9 @@
             </form>
         </div>
     </div>
+    <div id="orderNow">
+        <a onclick="displayComplainBox()" href="javascript:void(0);"><i class="fas fa-user-ninja"></i> Report case</a>
+    </div>
     <?php
         $host = "localhost";
         $username = "root";
@@ -463,15 +466,13 @@
         $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
         $insert_done = mysqli_query($connectDB, $sql_insert);
 
-        if($insert_done){
-            return "index.php";
+        /* if($insert_done){
+            echo "";
         }else{
             echo "not submitted";
-        }
+        } */
     ?>
-    <div id="orderNow">
-        <a onclick="displayComplainBox()" href="javascript:void(0);"><i class="fas fa-user-ninja"></i> Report case</a>
-    </div>
+    
     <script src="script.js"></script>
     
 </body>

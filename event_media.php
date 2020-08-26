@@ -210,7 +210,7 @@
         $insert_done = mysqli_query($connectDB, $sql_insert);
 
         if($insert_done){
-            return "index.php";
+            echo "";
         }else{
             echo "not submitted";
         }
