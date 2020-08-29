@@ -215,7 +215,7 @@
             $host = "localhost";
             $username = "root";
             $password = "";
-            $dbname = "homeland_foundation";
+            $dbname = "homewrfl_homeland_foundation";
             $connectDB = mysqli_connect($host, $username, $password, $dbname);
     
             /* if($connectDB){
