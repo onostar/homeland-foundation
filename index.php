@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Applied Macros system">
     <meta name="description" content="Save Homeland Foundation, is an Initiative of The Sensitisation Against Environmental Hazard, Domestic Violence And Crime. Her Community Oriented Policing Services (COPS) has been introduced  to help law enforcement agencies implement and enhance community policing. ">
-    <meta name="keywords" content="community policing, security, police, secure, community, crime, fight crime, rape, cultism, corruption, kidnapping">
+    <meta name="keywords" content="homeland foundation, homeland security, homeland, community policing, security, police, secure, community, crime, fight crime, rape, cultism, corruption, kidnapping">
     <title>Save Homeland Foundation - Your Neighbourhood watch</title>
     <link rel="icon" href="images/homeland_foundation_logo.png" type="image/png" size="32X32">
     <link rel="stylesheet" href="style.css">
@@ -18,14 +19,15 @@
         <!-- Top header -->
         <div class="topHeader" id="topHeader">
             <section class="socialLinks">
-                <a target="-blank" href="https://facebook.com/homelandfoundation" title="Follow us on facebook"><i class="fab fa-facebook" style="color:#747171;"></i></a>
+                <a target="_blank" href="https://facebook.com/homelandfoundation" title="Follow us on facebook"><i class="fab fa-facebook" style="color:#747171;"></i></a>
                 <a target="_blank" href="https://twitter.com/homelandfoundationr" title="Follow us on twitter"><i class="fab fa-twitter" style="color:#747171;"></i></a>
                 <a target="_blank" href="https://instagram.com/homelandfoundation" title="Follow us on instagram"><i class="fab fa-instagram" style="color:#747171;"></i></a>
             </section>
             <section class="callLinks">
-                <p><i class="fas fa-phone-alt" style="color:#747171;"></i>+2349023140300</p>
+                <p><i class="fas fa-phone-alt" style="color:#747171;"></i>052293650</p>
                 
-                <p><i class="fab fa-whatsapp" style="color:#747171;"></i>+2348157985866</p>
+                <p><i class="fab fa-whatsapp" style="color:#747171;"></i>07035038500</p>
+
             </section>
         </div>
         <!-- main header with navigation -->
@@ -75,12 +77,15 @@
                 </div>
                 <div class="slide" id="slide2">
                     <div class="slideImg">
-                        <img src="images/community-policing.jpg">
+                        <img src="images/homeland_5.jpg">
                     </div>
                     <div class="slider">
                         <h2>Community Policing</h2>
                         <p>Your neighbourhood watch. We keep watch so you dont have to.</p>
-                        <button><a href="services.php">Learn more</a></button>
+                        <div div class="buttons">
+                            <button><a href="services.php">Learn more</a></button>
+                            <button><a href="#" class="join">Volunteer</a></button>
+                        </div>
                     </div>
                 </div>
                 <div class="slide" id="slide3">
@@ -119,7 +124,7 @@
                     <i class="far fa-money-bill-alt"></i>
                     <div class="addonsNote">
                         <h3>We are Non profit</h3>
-                        <p>We do not chagre the community</p>
+                        <p>We do not charge the community</p>
                     </div>
                 </section>
                 <section class="addonsFeatures" onclick="displayComplainBox()">
@@ -141,7 +146,7 @@
                     <p>Save Homeland foundation, also known as Homeland security Nigeria is a Sensitization against environmental Hazard, Domestic Violence and Crime Initiative. <br><br>It is a way for law enforcement and the citizens to work together not only for disaster preparedness but for all hazards and encourage citizens to volunteer in their communities to encourage community policing which is our Community Oriented Policing Services (COPS) introduced to help law enforcement agencies implement and enhance community policing.</p>
                     <button><a href="about.html">Read more</a></button>
                 </div>
-                <img src="images/community_policing.jpg" alt="Save homeland foundation">
+                <img src="images/homeland_7.jpg" alt="Save homeland foundation">
             </div>
         </section>
         <!--Service section-->
@@ -154,7 +159,7 @@
                     <div class="service" id="cakeService">
                         <img class="servImg" src="images/community-security.jpg" alt="Neighbourhood security">
                         <div class="servSlideImg">
-                            <img src="images/neighbourhood_watch.jpg" alt="Neighbourhood security">
+                            <img src="images/homeland_2.jpg" alt="Neighbourhood security">
                         </div>
                         <h3>Your neighbourhood watchmen</h3>
                     </div>
@@ -189,7 +194,10 @@
             <div class="takeAction">
                 <h3>Say no to crime</h3>
                 <p>Are you suspecting a crime in your area?.<br>Are you experiencing unrest in your local area?<br>We are closer to you than you think<br><br>Give us a call or click the button below for a swift response</p>
-                <a href="javascript:void(0);" onclick="displayComplainBox()"><button>Report an incident</button></a>
+                <div div class="buttons">
+                    <a href="javascript:void(0);" onclick="displayComplainBox()"><button>Report an incident</button></a>
+                    <a href="#" class="join"><button>Join us</button></a>
+                </div>
             </div>
         </section>
         <!-- Upcoming events -->
@@ -202,8 +210,11 @@
                 </div>
                 <div class="event_text">
                     <h3>Benefits of Community Policing</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium numquam incidunt ullam. Suscipit maxime excepturi laboriosam. Eligendi tempora amet minima nihil molestiae quos, magni aliquid laborum iure tempore neque ad et, voluptatum corrupti asperiores dolorum, magnam optio ratione. Tenetur, obcaecati!</p>
-                    <button><a href="contact.html" title="Learn more">Learn more</a></button>
+                    <p>Community policing is seen as an effective way to promote public safety and to enhance the quality of life in a community. <br><br>
+                    Implementing community policing changes the structure of policing and how it is managed. Community policing helps build up and strengthen the community. It also links the police and the community together. The partnership that develops over time can ultimately help the police find the underlying causes of crime within the neighborhood. By getting the community involved, the police have more resources available to them to help in crime prevention.<br><br>
+                    We invite you to join us as we give more insight on community policing and its benefits</p>
+                    <button class="join"><a href="#" title="Become a member">Join us today</a></button>
+                    <button><a href="contact_us.php" title="Learn more">Learn more</a></button>
                 </div>
             </div>
         </section>
@@ -214,36 +225,38 @@
             <p>Have a glance at our recent events and other media tips</p>
             <div class="recentjobs">
                 <figure>
-                    <img src="images/events1.jpg" alt="events">
+                    <img src="images/homeland_1.jpg" alt="events">
+                </figure>
+                <figure>
+                    
+                        <img src="images/homeland_2.jpg">
+                    
                 </figure>
                 <figure>
                     <video controls>
-                        <source src="images/event_media2.mp4">
+                        <source src="images/edo_vigilante.mp4">
                     </video>
                 </figure>
                 <figure>
-                    <img src="images/events3.jpg" alt="events">
+                    <img src="images/homeland_3.jpg" alt="events">
                 </figure>
                 <figure>
-                    <img src="images/events4.jpg" alt="events">
+                    <img src="images/homeland_5.jpg" alt="events">
                 </figure>
                 <figure>
-                    <img src="images/events5.jpg" alt="events">
+                    <img src="images/homeland_4.jpg" alt="events">
                 </figure>
                 <figure>
-                    <img src="images/events2.jpg" alt="events">
+                    
+                        <img src="images/homeland_6.jpg">
+                
                 </figure>
                 <figure>
-                    <video controls>
-                        <source src="images/event_media1.mp4">
-                    </video>
-                </figure>
-                <figure>
-                    <img src="images/events1.jpg" alt="events">
+                    <img src="images/homeland_7.jpg" alt="events">
                 </figure>
                 
             </div>
-            <button><a href="event_gallery.html" title="See more photos of our events">View more</a></button>
+            <button><a href="event_gallery.php" title="See more photos of our events">View more</a></button>
         </section>
         <!-- Daily deals -->
         <!-- <section id="dailyDeal">
@@ -271,7 +284,7 @@
             </div>
         </section> -->
         <!-- Client testimonies -->
-        <section id="testimonial">
+        <!-- <section id="testimonial">
             <h2>Testimonies from the neighbourhood</h2>
             <hr size="5">
             <div class="testimonialSlide">
@@ -294,18 +307,18 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="trends">
             <h2>Safety Tips and Thoughts</h2>
             <hr size="5">
             <div class="trendPosts">
-                <article><a href="nigeria_soldiers_ambushed_by_Boko_Haram.php">
+                <article><a href="edo_vigilante_declare_war_on_cultist.php">
                     <figure>
-                        <img src="images/events1.jpg" alt="Nigeria soldiers ambushed by boko haram">
+                        <img src="images/homeland_3.jpg" alt="Edo vigilante declares war on cultists">
                         <figcaption>
-                            <span style="background-color:red">Terrorist</span>
-                            <h3>Nigeria soldiers ambushed by Boko Haram</h3>
-                            <p>Nigeria Soldiers of the 198 special forces battalion were killed by Boko Haram members on 7th July 2020, while another 23 soliders were killed on 8th July, 2020.....</p>
+                            <span style="background-color:red">Cultism</span>
+                            <h3>Edo Vigilante Declares war on Cultists</h3>
+                            <p>Edo State Vigilante network in Benin City has declared war on all cult activities as cult gang war reignites in Benin City....</p>
                         </figcaption>
                     </figure></a>
                 </article>
@@ -319,13 +332,13 @@
                         </figcaption>
                     </figure></a>
                 </article>
-                <article><a href="javascript:void(0);">
+                <article><a href="how_to_prevent_hazards.php">
                     <figure>
                         <img src="images/hazards.jpg" alt="Preventing hazards">
                         <figcaption>
                             <span style="background-color:rgb(59, 163, 204)">Environment</span>
                             <h3>How to prevent hazards</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam tempore explicabo velit culpa voluptas. Temporibus earum ut doloremque quasi a!</p>
+                            <p>Environmental hazards of various types has destroyed most of nature and render people homeless. Here are some tips to avoid Hazards</p>
                         </figcaption>
                     </figure></a>
                 </article>
@@ -348,7 +361,7 @@
                         <i class="fas fa-phone-volume" style="color:rgb(29, 128, 111); font-size: 2.5em;"></i>
                         <div class="addtext">
                             <h4>Call us:</h4>
-                            <p>09023140300<br>08157985866</p>
+                            <p>052293650<br>07035038500</p>
                         </div>
                     </div>
                     <div class="address email">
@@ -400,7 +413,7 @@
             </section>
         </section>
         <section class="secondaryFooter">
-            <p>&copy;2020 Homeland foundation. All Rights Reserved. Powered by <a target="_blank" href="https://appliedmacros.com">Applied Macros system</a></p>
+            <p>&copy; <?php echo date("Y");?> Homeland foundation. All Rights Reserved. Powered by <a target="_blank" href="https://appliedmacros.com">Applied Macros system</a></p>
         </section>
     </footer>
     <div class="help" id="help">
@@ -410,12 +423,12 @@
         <a href="#topHeader"><i class="fas fa-arrow-up" style="color:#fff;" size="10"></i></a>
     </div>
     <div id="complainBox">
-        <p onclick="displayComplainBox()"><i class="fas fa-window-close"></i></p>
+        <p id="closeComplain"><i class="fas fa-window-close"></i></p>
         <div class="clear"></div>
         <div class="complaintBox">
-            <h3>Drop your complaints here</h3>
-            <form method="POST" action="index.php">
-                <input type="text" name="full_name" placeholder="Your fullName*" required><br>
+            <h3>Report a crime</h3>
+            <form method="POST" action="report_crime.php">
+                <input type="text" name="full_name" placeholder="Your Full Name (Not mandatory)"><br>
                 <select name="victim_location" required>
                     <option value="" selected>Select your location</option>
                     <option value="New Benin">New Benin market</option>
@@ -436,43 +449,161 @@
                     <option value="Suspects">Suspects</option>
                     <option value="Crime in progress">Crime in progress</option>
                 </select><br>
-                <textarea name="victim_message" placeholder="Give us a detailed information of the incident" required>
-                </textarea>
-                <button type="submit">Submit</button>
+                <textarea name="victim_message" placeholder="Give us a detailed information of the incident" required></textarea>
+                <div class="btns">
+                    <button type="submit">Submit report</button>
+                    <button id="donate">Suport us</button>
+                </div>
             </form>
         </div>
     </div>
     <div id="orderNow">
         <a onclick="displayComplainBox()" href="javascript:void(0);"><i class="fas fa-user-ninja"></i> Report case</a>
     </div>
+    <div id="memberForm">
+        <div class="cover">
+            <h3>Kindly fill the application form below</h3>
+            <hr>
+            <div id="closeForm"><i class="fas fa-window-close"></i></div>
+            <form method="POST" enctype="multipart/form-data">
+                <h4>Personal Details</h4>
+                <div class="info">
+                    <div class="data">
+                        <label for="surName">Surname</label><br>
+                        <input type="text" id="surName" name="surname" required placeholder="Asuelimen">
+                    </div>
+                    <div class="data">
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" id="firstName" name="first_name" required placeholder="Daniel">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="data">
+                        <label for="otherName">Other Names</label><br>
+                        <input type="text" id="otherName" name="other_names" required placeholder="Osas">
+                    </div>
+                    <div class="data">
+                        <label for="usualName">Usual Name(Name mosty called)</label><br>
+                        <input type="text" id="usualName" name="usual_name" required placeholder="danibiz">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="data">
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="date" id="dob" name="birth_date" required>
+                    </div>
+                    <div class="data">
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" id="phone" name="phone_number" required placeholder="08012345678">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="data">
+                        <label for="resAddress">Residential Address</label><br>
+                        <input type="text" id="resAddress" name="residential_address" required placeholder="24 agbonifo street">
+                    </div>
+                    <div class="data">
+                        <label for="permAddress">Permanent Home Address</label><br>
+                        <input type="text" id="phone" name="permanent_address" required placeholder="15 agbomomba road, benin city">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="data">
+                        <label for="email">Email Address(If any)</label><br>
+                        <input type="email" id="email" name="email" placeholder="osas@example.com">
+                    </div>
+                    <div class="data">
+                        <label for="passport">Upload Passport Photograph</label><br>
+                        <input type="file" id="passport" name="passport" required>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="data">
+                        <label for="healthIssue">Any Health issues</label><br>
+                        <select name="health_issue" id="healthIssue" required>
+                            <option value="" selected>Any Health Issues</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                <h4>Next of Kin Details</h4>
+                <div class="info">
+                    <div class="data">
+                        <label for="nextName">next of Kin Name</label>
+                        <input type="text" id="nextName" name="next_of_kin_name" required placeholder="Joseph Asuelimhen">
+                    </div>
+                    <div class="data">
+                        <label for="nextAddress">Next of Kin Address</label><br>
+                        <input type="text" id="nextAddress" name="next_of_kin_address" required placeholder="15 agbomomba road, benin city">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="data">
+                        <label for="nextPhone">next of Kin Phone</label><br>
+                        <input type="tel" id="nextPhone" name="next_of_kin_phone" required placeholder="07012345678">
+                    </div>
+                    
+                </div>
+                <h4>Declaration</h4>
+                <div class="info" id="declaration">
+                    <div class="data" id="declare">
+                        <p>I </p>
+                        <input type="text" required> <p>confirm that the above information is true</p>
+                    </div>
+                </div>
+                <h4>Guarantor Details</h4>
+                <div class="info">
+                    <div class="data">
+                        <label for="gaurantorName">Gaurantor Name</label><br>
+                        <input type="text" id="gaurantorName" name="gaurantor_name" required placeholder="Idemudia Joseph">
+                    </div>
+                    <div class="data">
+                        <label for="gaurantorAdd">Gaurantor Address</label><br>
+                        <input type="text" id="gaurantorAdd" name="gaurantor_address" required placeholder="32 ikpoba slope, benin city">
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="data">
+                        <label for="gaurantorPhone">Gaurantor Phone</label><br>
+                        <input type="tel" id="gaurantorPhone" name="gaurantor_phone" required placeholder="09012345678">
+                    </div>
+                    <div class="data">
+                        <label for="gaurantorFoto">Gaurantor Passport</label><br>
+                        <input type="file" id="gaurantorFoto" name="gaurantor_photo">
+                    </div>
+                </div>
+                <button type="submit" name="apply" id="apply">Submit Application</button>
+            </form>
+        </div>
+    </div>
+    <div id="donation">
+        
+        <div class="donate_details">
+            <h3>Kindly Support the team!</h3>
+            <p>Your donations are highly aprreciated. You can send your donations to the account details below:</p>
+            <p><span>Name:</span> Homeland Foundation<br>
+            <span>Bank: </span>Ecobank<br>
+            <span>Acct No.: </span>1234567890</p>
+
+            <button id="close_donate">Close</button>
+            <div class="clear"></div>
+        </div>
+    </div>
     <?php
-        $host = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "homewrfl_homeland_foundation";
-        $connectDB = mysqli_connect($host, $username, $password, $dbname);
-
-        /* if($connectDB){
-            echo "db connected";
-        }else{
-            echo "not connected";
+        /* if(isset($_SESSION['success'])){
+            echo "<div class='success'>
+                <p>" . $_SESSION['success'] ."</p>
+                
+            </div>";
         } */
-
-        $full_name = (isset ($_POST['full_name']) ? $_POST['full_name'] : '');
-        $location = (isset ($_POST['victim_location']) ? $_POST['victim_location'] : '');
-        $incident = (isset ($_POST['incident']) ? $_POST['incident'] : '');
-        $message = (isset ($_POST['victim_message']) ? $_POST['victim_message'] : '');
-
-        $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
-        $insert_done = mysqli_query($connectDB, $sql_insert);
-
-        /* if($insert_done){
-            echo "";
-        }else{
-            echo "not submitted";
+        /* if(isset($_SESSION['error'])){
+            echo "<div class='error'>
+                <p>" . $_SESSION['error'] ."</p>
+            </div>";
         } */
     ?>
-    
+    <script src="jquery.js"></script>
     <script src="script.js"></script>
     
 </body>

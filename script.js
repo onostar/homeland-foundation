@@ -72,4 +72,48 @@ function displayComplainBox(){
 setTimeout(function showReportButton(){
     let reportButton = document.getElementById('orderNow');
     reportButton.style.display = "block";
-}, 10000)
+}, 10000);
+/* close member form */
+$(document).ready(function(){
+    $("#closeForm").click(function(){
+        $("#memberForm").hide();
+    })
+});
+/* show member form */
+$(document).ready(function(){
+    $(".join").click(function(){
+        $("#memberForm").show();
+    })
+});
+/* show donation */
+$(document).ready(function(){
+    $("#donate").click(function(){
+        $("#donation").show();
+        $("#complainBox").hide();
+
+    })
+});
+/* close donation */
+$(document).ready(function(){
+    $("#close_donate").click(function(){
+        $("#donation").hide();
+        $("#complainBox").show();
+
+    })
+});
+
+/* close complain box */
+$(document).ready(function(){
+    $("#closeComplain").click(function(){
+        $("#complainBox").hide();
+
+    })
+});
+
+/* close success message */
+$(document).ready(function(){
+    $("#closeMessage").click(function(){
+        $(".success").hide();
+
+    })
+});

@@ -23,9 +23,9 @@
                 <a target="_blank" href="https://instagram.com/homelandfoundation" title="Follow us on instagram"><i class="fab fa-instagram" style="color:#747171;"></i></a>
             </section>
             <section class="callLinks">
-                <p><i class="fas fa-phone-alt" style="color:#747171;"></i>+2349023140300</p>
+                <p><i class="fas fa-phone-alt" style="color:#747171;"></i>052293650</p>
                 
-                <p><i class="fab fa-whatsapp" style="color:#747171;"></i>+2348157985866</p>
+                <p><i class="fab fa-whatsapp" style="color:#747171;"></i>07035038500</p>
             </section>
         </div>
         <!-- main header with navigation -->
@@ -69,13 +69,13 @@
         </section>
         <section id="ourExistence">
             <div class="trendPosts">
-                <article><a href="nigeria_soldiers_ambushed_by_Boko_Haram.php">
+                <article><a href="edo_vigilante_declare_war_on_cultist.php">
                     <figure>
-                        <img src="images/events1.jpg" alt="Avoiding rape">
+                        <img src="images/homeland_3.jpg" alt="Edo vigilante declares war on cultist">
                         <figcaption>
-                            <span style="background-color:red">Terrorism</span>
-                            <h3>Nigeria soldiers ambushed by Boko Haram</h3>
-                            <p>Nigeria Soldiers of the 198 special forces battalion were killed by Boko Haram members on 7th July 2020, while another 23 soliders were killed on 8th July, 2020.....</p>
+                            <span style="background-color:red">Cultism</span>
+                            <h3>Edo Vigilante Declares war on Cultists</h3>
+                            <p>Edo State Vigilante network in Benin City has declared war on all cult activities as cult gang war reignites in Benin City....</p>
                         </figcaption>
                     </figure></a>
                 </article>
@@ -89,13 +89,13 @@
                         </figcaption>
                     </figure></a>
                 </article>
-                <article><a href="javascript:void(0);">
+                <article><a href="how_to_prevent_hazards.php">
                     <figure>
                         <img src="images/hazards.jpg" alt="Preventing hazards">
                         <figcaption>
                             <span style="background-color:rgb(59, 163, 204)">Environment</span>
                             <h3>How to prevent hazards</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam tempore explicabo velit culpa voluptas. Temporibus earum ut doloremque quasi a!</p>
+                            <p>Workplace injuries due to electrical hazards are more than a possibility; they are a reality in many areas. There are thousands of people injured or worse every year.</p>
                         </figcaption>
                     </figure></a>
                 </article>
@@ -117,7 +117,7 @@
                             <i class="fas fa-phone-volume" style="color:rgb(29, 128, 111); font-size: 2.5em;"></i>
                             <div class="addtext">
                                 <h4>Call us:</h4>
-                                <p>09023140300<br>08157985866</p>
+                                <p>052293650<br>07035038500</p>
                             </div>
                         </div>
                         <div class="address email">
@@ -169,7 +169,7 @@
                 </section>
             </section>
             <section class="secondaryFooter">
-                <p>&copy;2020 Homeland foundation. All Rights Reserved. Powered by <a target="_blank" href="https://appliedmacros.com">Applied Macros system</a></p>
+                <p>&copy; <?php echo date("Y");?> Homeland foundation. All Rights Reserved. Powered by <a target="_blank" href="https://appliedmacros.com">Applied Macros system</a></p>
             </section>
         </footer>
         <div class="help" id="help">
@@ -212,32 +212,32 @@
             </div>
         </div>
         <?php
-            $host = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "homewrfl_homeland_foundation";
-            $connectDB = mysqli_connect($host, $username, $password, $dbname);
-    
-            /* if($connectDB){
-                echo "db connected";
-            }else{
-                echo "not connected";
-            } */
-    
-            $full_name = (isset ($_POST['full_name']) ? $_POST['full_name'] : '');
-            $location = (isset ($_POST['victim_location']) ? $_POST['victim_location'] : '');
-            $incident = (isset ($_POST['incident']) ? $_POST['incident'] : '');
-            $message = (isset ($_POST['victim_message']) ? $_POST['victim_message'] : '');
-    
-            $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
-            $insert_done = mysqli_query($connectDB, $sql_insert);
-    
-            if($insert_done){
-                echo "";
-            }else{
-                echo "not submitted";
-            }
-        ?>
+        $host = "localhost";
+        $username = "homewrfl_admin";
+        $password = "homeland@foundation";
+        $dbname = "homewrfl_homeland_foundation";
+        $connectDB = mysqli_connect($host, $username, $password, $dbname);
+
+        /* if($connectDB){
+            echo "db connected";
+        }else{
+            echo "not connected";
+        } */
+
+        $full_name = (isset ($_POST['full_name']) ? $_POST['full_name'] : '');
+        $location = (isset ($_POST['victim_location']) ? $_POST['victim_location'] : '');
+        $incident = (isset ($_POST['incident']) ? $_POST['incident'] : '');
+        $message = (isset ($_POST['victim_message']) ? $_POST['victim_message'] : '');
+
+        $sql_insert = "INSERT INTO complaint_form (full_name, victim_location, incident, victim_message) VALUES ('$full_name', '$location', '$incident', '$message')";
+        $insert_done = mysqli_query($connectDB, $sql_insert);
+
+        if($insert_done){
+            echo "<script>alert('Your complaint has been submitted!!');</script>";
+        }else{
+            echo "<script>not submitted</script>";
+        }
+    ?>
         <div id="orderNow">
             <a onclick="displayComplainBox()" href="javascript:void(0);"><i class="fas fa-user-ninja"></i> Report case</a>
         </div>

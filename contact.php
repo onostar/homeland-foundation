@@ -8,7 +8,7 @@
     $recipient = "contact@homelandfoundation.org";
     $subject = "Message from Contact form";
     $mailheader = "From: $email \r\n";
-    mail($recipient, $subject, $formContent, $mailheader);or die("Error!");
+    mail($recipient, $subject, $formContent, $mailheader) or die("Error!");
     echo "<!DOCTYPE html>
     <html lang='en'>
     <head>

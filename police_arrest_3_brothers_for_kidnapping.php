@@ -23,9 +23,10 @@
                 <a target="_blank" href="https://instagram.com/homelandfoundation" title="Follow us on instagram"><i class="fab fa-instagram" style="color:#747171;"></i></a>
             </section>
             <section class="callLinks">
-                <p><i class="fas fa-phone-alt" style="color:#747171;"></i>+2349023140300</p>
+                <p><i class="fas fa-phone-alt" style="color:#747171;"></i>052293650</p>
                 
-                <p><i class="fab fa-whatsapp" style="color:#747171;"></i>+2348157985866</p>
+                <p><i class="fab fa-whatsapp" style="color:#747171;"></i>07035038500</p>
+
             </section>
         </div>
         <!-- main header with navigation -->
@@ -99,9 +100,14 @@
                     <h3>Related Posts</h3>
                     <div class="aside_articles">
                         <figure>
-                            <a href="nigeria_soldiers_ambushed_by_Boko_Haram.php">
-                            <img src="images/boko_haram_ambushed_nigerian_soliders.jpg" alt="Nigeria soldiers ambushed">
-                            <figcaption>Nigeria Soldiers of the 198 batalion were ambushed and killed by the Boko Haram members on 7th July.</figcaption></a>
+                            <a href="edo_vigilante_declare_war_on_cultist.php">
+                            <img src="images/homeland_3.jpg" alt="edo vigilante declare war against cultists">
+                            <figcaption>Edo Vigilante declare war on cultist</figcaption></a>
+                        </figure>
+                        <figure>
+                            <a href="how_to_prevent_hazards.php">
+                            <img src="images/hazards.jpg" alt="hazards">
+                            <figcaption>How to prevent environmental hazards</figcaption></a>
                         </figure>
                     </div>
                 </aside>
@@ -123,7 +129,7 @@
                             <i class="fas fa-phone-volume" style="color:rgb(29, 128, 111); font-size: 2.5em;"></i>
                             <div class="addtext">
                                 <h4>Call us:</h4>
-                                <p>09023140300<br>08157985866</p>
+                                <p>052293650<br>07035038500</p>
                             </div>
                         </div>
                         <div class="address email">
@@ -175,7 +181,7 @@
                 </section>
             </section>
             <section class="secondaryFooter">
-                <p>&copy;2020 Homeland foundation. All Rights Reserved. Powered by <a target="_blank" href="https://appliedmacros.com">Applied Macros system</a></p>
+                <p>&copy; <?php echo date("Y");?> Homeland foundation. All Rights Reserved. Powered by <a target="_blank" href="https://appliedmacros.com">Applied Macros system</a></p>
             </section>
         </footer>
         <div class="help" id="help">
@@ -219,8 +225,8 @@
     </div>
     <?php
         $host = "localhost";
-        $username = "root";
-        $password = "";
+        $username = "homewrfl_admin";
+        $password = "homeland@foundation";
         $dbname = "homewrfl_homeland_foundation";
         $connectDB = mysqli_connect($host, $username, $password, $dbname);
 
@@ -239,9 +245,9 @@
         $insert_done = mysqli_query($connectDB, $sql_insert);
 
         if($insert_done){
-            echo "";
+            echo "<script>alert('Your complaint has been submitted!!');</script>";
         }else{
-            echo "not submitted";
+            echo "<script>not submitted</script>";
         }
     ?>
         <div id="orderNow">
